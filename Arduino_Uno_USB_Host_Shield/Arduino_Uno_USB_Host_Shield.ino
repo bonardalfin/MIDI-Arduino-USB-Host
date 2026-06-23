@@ -13,11 +13,11 @@ void setup() {
   Serial.begin(115200);
   
   if (Usb.Init() == -1) {
-    Serial.println("Gagal menginisialisasi USB Host Shield!");
+    Serial.println("Gagal koneksi USB Host Shield!");
     while (1); // Hentikan program jika shield tidak terdeteksi
   }
   
-  Serial.println("USB Host Shield berhasil diinisialisasi.");
+  Serial.println("USB Host Shield berhasil terhubung.");
   Serial.println("Menunggu perangkat MIDI USB dicolokkan...");
 }
 
@@ -39,8 +39,8 @@ void loop() {
       // Mengirim data MIDI CC
       sendMIDI_CC(midiChannel, ccNumber, ccValue);
 
-      // Print status ke Serial Monitor
-      Serial.print("Mengirim MIDI CC#1 | Channel 1 | Value: ");
+      // Print Serial Monitor
+      Serial.print("CC#1 | Channel 1 | Value: ");
       Serial.println(ccValue);
 
       // Naikkan nilai, jika lewat dari 10 balik lagi ke 1
