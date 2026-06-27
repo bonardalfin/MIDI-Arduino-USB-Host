@@ -1,0 +1,2 @@
+24 Juni 2026 : Test USB Host Shiled 2.0
+27 Juni 2026 : Test LCD 20x4 I2C
