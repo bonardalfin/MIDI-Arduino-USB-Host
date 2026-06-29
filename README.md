@@ -1,5 +1,5 @@
 # MIDI Arduino UNO USB Host Shield
-Project yang menggunakan Arduino UNO + USB Host Shield untuk keperluan mengirim MIDI dan SysEx Message
+Project yang menggunakan Arduino UNO + USB Host Shield untuk keperluan mengirim MIDI Message (PC dan CC)
 Tujuannya untuk membuat MIDI Switch Controller melalui protokol USB Host.
 
 Project ini menggunakan Sonicake Pocket Master untuk testing, 
